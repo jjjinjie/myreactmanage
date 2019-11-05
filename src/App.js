@@ -12,7 +12,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://www.baidu.com"
           target="_blank"
           rel="noopener noreferrer"
         >
