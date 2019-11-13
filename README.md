@@ -1,10 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-11121212
-## Available Scripts123123112131231
+
+12123
+## Available Scripts
+12313
+In the project directory, you can run:点点点
 123123
-In the project directory, you can run:123123
-请问去
-### `npm start`123123qwe
+### `npm start`
+
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
