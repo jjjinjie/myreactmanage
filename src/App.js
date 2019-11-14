@@ -5,8 +5,21 @@ import logo from './logo.svg';
 
 export function Body() {
   return (
-    <div>内容11</div>
+    <div>生活内容
+    </div>
+    
   );
+}
+class Logo extends React.Component
+{
+  render()
+  {
+    
+  return (
+    <img  className="Logo-size" src={process.env.PUBLIC_URL + '/logo.gif'} /> 
+  
+  );
+}
 }
 class Header extends React.Component {
 
@@ -20,9 +33,11 @@ class Header extends React.Component {
     //     // this.setState({ posts });
     //     console.log(res);
     //   });
+    const style = {'font-family':'arial','color':'green','font-size':'20px'};
     return (
       <div>
-        <img src={logo} style={{height: 4 + 'em',width:4+'em'}}></img>
+        <Logo></Logo>
+        <span style={style}>欢迎</span>
       </div>
     );
   }
