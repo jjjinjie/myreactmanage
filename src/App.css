@@ -24,6 +24,7 @@ body{
 .App-link {
   color: #09d3ac;
 }
+<<<<<<< HEAD
 
 .Piao{
   width: 100px; 
@@ -44,4 +45,9 @@ body{
 @keyframes circle{
   0%{ transform:rotate(0deg); }
   100%{ transform:rotate(360deg); }
+=======
+.Logo-size{
+  height:4em;
+  width:4em
+>>>>>>> 2faa435b0c12310500b4dbe0c5fc6c9d290e317e
 }

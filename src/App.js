@@ -6,8 +6,21 @@ import imgURL from './aaaaa.jpg';
 
 export function Body() {
   return (
-    <div>内容11</div>
+    <div>生活内容
+    </div>
+    
   );
+}
+class Logo extends React.Component
+{
+  render()
+  {
+    
+  return (
+    <img  className="Logo-size" src={process.env.PUBLIC_URL + '/logo.gif'} /> 
+  
+  );
+}
 }
 class Header extends React.Component {
 
@@ -21,9 +34,15 @@ class Header extends React.Component {
     //     // this.setState({ posts });
     //     console.log(res);
     //   });
+    const style = {'font-family':'arial','color':'green','font-size':'20px'};
     return (
       <div>
+<<<<<<< HEAD
         <img src={logo} style={{ height: 4 + 'em', width: 4 + 'em' }}></img>
+=======
+        <Logo></Logo>
+        <span style={style}>欢迎</span>
+>>>>>>> 2faa435b0c12310500b4dbe0c5fc6c9d290e317e
       </div>
     );
   }
