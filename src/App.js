@@ -8,19 +8,17 @@ export function Body() {
   return (
     <div>生活内容
     </div>
-    
+
   );
 }
-class Logo extends React.Component
-{
-  render()
-  {
-    
-  return (
-    <img  className="Logo-size" src={process.env.PUBLIC_URL + '/logo.gif'} /> 
-  
-  );
-}
+class Logo extends React.Component {
+  render() {
+
+    return (
+      <img className="Logo-size" src={process.env.PUBLIC_URL + '/logo.gif'} />
+
+    );
+  }
 }
 class Header extends React.Component {
 
@@ -34,15 +32,11 @@ class Header extends React.Component {
     //     // this.setState({ posts });
     //     console.log(res);
     //   });
-    const style = {'font-family':'arial','color':'green','font-size':'20px'};
+    const style = { 'font-family': 'arial', 'color': 'green', 'font-size': '20px' };
     return (
       <div>
-<<<<<<< HEAD
-        <img src={logo} style={{ height: 4 + 'em', width: 4 + 'em' }}></img>
-=======
         <Logo></Logo>
         <span style={style}>欢迎</span>
->>>>>>> 2faa435b0c12310500b4dbe0c5fc6c9d290e317e
       </div>
     );
   }
@@ -68,30 +62,30 @@ class Piao extends React.Component {
   handleClick() {
     let x1 = 1;
     let y1 = 1;
-    
+
     console.log(32)
     if (onflag) {
       onflag = false;
       // let box= document.getElementById("html");
-      console.log(window.screen.width,222)
+      console.log(window.screen.width, 222)
       let winwidth = document.body.offsetWidth - 100;
       let winheight = document.body.offsetHeight - 150;
 
       let aa = 1;
-      let bb= 1;
+      let bb = 1;
       setInterval(() => {
-       
-        if(x1 > winwidth || x1 < 0){
+
+        if (x1 > winwidth || x1 < 0) {
           // aa =aa + Math.random();
-          aa= -aa;
+          aa = -aa;
         }
         x1 += aa;
-        
-        if(y1 > winheight || y1 <  0){
+
+        if (y1 > winheight || y1 < 0) {
           // bb = bb + Math.random();
           bb = -bb;
         }
-       
+
         y1 += bb;
         this.setState({
           top: y1,
@@ -107,9 +101,9 @@ class Piao extends React.Component {
 
     // alert(xx)
     return (
-      <div className='Piao' style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={this.handleClick}> 
-        
-        <img src={imgURL } />
+      <div className='Piao' style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={this.handleClick}>
+
+        <img src={imgURL} />
 
       </div>
     );
