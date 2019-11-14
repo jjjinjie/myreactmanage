@@ -56,7 +56,7 @@ let onflag = true;
 class Piao extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { top: "1", left: "1" };
+    this.state = { top: "100", left: "100" };
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick() {
@@ -94,14 +94,16 @@ class Piao extends React.Component {
       }, 1);
     }
   }
-
+  test(e){
+    this.handleClick();
+  }
   render() {
     let xx = this.state.top
     let yy = this.state.left
 
     // alert(xx)
     return (
-      <div className='Piao' style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={this.handleClick}>
+      <div className='Piao' id="piao" style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={(e)=>{this.test(e)}}>
 
         <img src={imgURL} />
 
@@ -109,6 +111,8 @@ class Piao extends React.Component {
     );
   }
 }
+
+
 
 
 
