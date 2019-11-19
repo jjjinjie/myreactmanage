@@ -6,7 +6,7 @@ import imgURL from './aaaaa.jpg';
 
 export function Body() {
   return (
-    <div>生活内容
+    <div>生活内容11
     </div>
 
   );
