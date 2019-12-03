@@ -105,7 +105,7 @@ class Piao extends React.Component {
     return (
       <div className='Piao' id="piao" style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={(e)=>{this.test(e)}}>
 
-        <img src={imgURL} />
+        {/* <img src={imgURL} /> */}
 
       </div>
     );
