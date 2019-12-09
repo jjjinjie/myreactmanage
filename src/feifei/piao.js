@@ -1,12 +1,16 @@
 import React from 'react';
-import imgURL from './img.jpg';
+// import imgURL from './img.jpg';
 
 class Piao extends React.Component {
     constructor(props) {
       super(props);
       this.state = { top: "100", left: "100" };
     }
-    componentWillMount(){
+    
+    componentDidMount(){
+      this.runpiao();
+    }
+    runpiao(){
       let x1 = 1;
       let y1 = 1;
   
@@ -34,7 +38,6 @@ class Piao extends React.Component {
             left: x1
           })
         }, 10);
-  
     }
   
     test(e){
@@ -52,19 +55,4 @@ class Piao extends React.Component {
   }
 
 
-  class aa extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            li:"111"
-        }
-    }
-    render(){
-        const {li} = this.state; 
-        return (
-            <div>{li}</div> 
-        )
-    }
-
-  }
   export default Piao;

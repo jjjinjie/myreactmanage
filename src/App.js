@@ -41,7 +41,7 @@ class Header extends React.Component {
     return (
       <div>
         <Logo></Logo>
-        <span style={{style}}>欢迎</span>
+        <span style={{ style }}>欢迎</span>
       </div>
     );
   }
@@ -65,4 +65,4 @@ function Root() {
     </div>
   );
 }
-export { Root, Header, Piao,Box, Footer };
+export { Root, Header, Piao, Box, Footer };
