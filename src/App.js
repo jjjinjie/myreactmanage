@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
+
+import Piao from './feifei/piao';
+import Box from './feifei/list';
+
+
 // import axios from 'axios';
-import logo from './logo.svg';
-import imgURL from './aaaaa.jpg';
+// import logo from './logo.svg';
+
 
 export function Body() {
   return (
@@ -36,7 +41,7 @@ class Header extends React.Component {
     return (
       <div>
         <Logo></Logo>
-        <span style={style}>欢迎</span>
+        <span style={{style}}>欢迎</span>
       </div>
     );
   }
@@ -49,88 +54,15 @@ function Footer() {
 }
 
 
-
-let onflag = true;
-
-
-class Piao extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { top: "100", left: "100" };
-    this.handleClick = this.handleClick.bind(this)
-  }
-  handleClick() {
-    let x1 = 1;
-    let y1 = 1;
-
-    console.log(32)
-    if (onflag) {
-      onflag = false;
-      // let box= document.getElementById("html");
-      console.log(window.screen.width, 222)
-      let winwidth = document.body.offsetWidth - 100;
-      let winheight = document.body.offsetHeight - 150;
-
-      let aa = 1;
-      let bb = 1;
-      setInterval(() => {
-
-        if (x1 > winwidth || x1 < 0) {
-          // aa =aa + Math.random();
-          aa = -aa;
-        }
-        x1 += aa;
-
-        if (y1 > winheight || y1 < 0) {
-          // bb = bb + Math.random();
-          bb = -bb;
-        }
-
-        y1 += bb;
-        this.setState({
-          top: y1,
-          left: x1
-        })
-      }, 1);
-    }
-  }
-  test(e){
-    this.handleClick();
-  }
-  render() {
-    let xx = this.state.top
-    let yy = this.state.left
-
-    // alert(xx)
-    return (
-      <div className='Piao' id="piao" style={{ top: (xx) + "px", left: (yy) + "px" }} onClick={(e)=>{this.test(e)}}>
-
-        <img src={imgURL} />
-
-      </div>
-    );
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 function Root() {
   return (
     <div>
       <Header></Header>
       <Body></Body>
       <Piao></Piao>
+      <Box></Box>
       <Footer></Footer>
     </div>
   );
 }
-export { Root, Header, Piao, Footer };
+export { Root, Header, Piao,Box, Footer };
