@@ -1,10 +1,15 @@
+下载程序之后，需要使用：
+部署
+设置nodejs淘宝镜像，命令：npm install -g cnpm --registry=https://registry.npm.taobao.org
+1、安装axios，命令：npm install axios
+2、安装请求过滤器，命令：npm install http-proxy-middleware --save
+3、安装路由，命令：npm install react-router-dom --save
+4、安装typescript，可以编译 as类型数据脚本，命令：npm install  typescript --save
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-12312312
-12123
+
 ## Available Scripts
-12313
-In the project directory, you can run:点点点
-123123
+In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
@@ -12,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-0000
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
