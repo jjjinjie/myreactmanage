@@ -3,17 +3,26 @@ import './App.css';
 
 import Piao from './feifei/piao';
 import Box from './feifei/list';
-
+import ThreeMap  from './3d/earth';
 
 // import axios from 'axios';
 // import logo from './logo.svg';
 
 
 export function Body() {
+  const style = { 'font-family': 'arial', 'color':'#FFFFFF', 'font-size': '24px' };
+    const styleya = { 'font-family': 'arial', 'color':'#FFFFFF', 'font-size': '24px' };
   return (
-    <div>生活内容11
-    </div>
-
+    <div style={{'text-align':'center'}}>
+        <Logo></Logo>
+        <div >
+        <span style={ style }>在最后一个瞬间，总有一个以前不存在的理由——即：不可能再犹豫了。</span>
+　　<br></br>
+　<span style={ styleya }>　——乔治·爱略特</span>
+      </div>
+      <ThreeMap ></ThreeMap>
+      </div>
+    
   );
 }
 class Logo extends React.Component {
@@ -37,19 +46,24 @@ class Header extends React.Component {
     //     // this.setState({ posts });
     //     console.log(res);
     //   });
-    const style = { 'font-family': 'arial', 'color': 'green', 'font-size': '20px' };
+    const style = { 'font-family': 'arial', 'color':'#FFFFFF', 'font-size': '48px' };
+    const styleya = { 'font-family': 'arial', 'color':'#FFFFFF', 'font-size': '48px' };
     return (
-      <div>
-        <Logo></Logo>
-        <span style={{ style }}>欢迎</span>
+      <div style={{'text-align':'center'}}>
+        
       </div>
     );
   }
 }
 
 function Footer() {
+  const style = { 'font-family': 'arial', 'color':'#FFFFFF', 'font-size': '24px' ,'text-align':'center'};
   return (
-    <div>我是页脚</div>
+    <div style={style}><span>每个人都有他个人的神秘世界。这世界有它最美好的时节，这世界也有它最可怕的瞬息。可是这都不会为我们所知悉。
+　　</span>
+<br></br>
+<span>——叶甫图中柯</span>
+    　　</div>
   );
 }
 
@@ -59,8 +73,7 @@ function Root() {
     <div>
       <Header></Header>
       <Body></Body>
-      <Piao></Piao>
-      <Box></Box>
+      
       <Footer></Footer>
     </div>
   );

@@ -5,7 +5,7 @@
 2、安装请求过滤器，命令：npm install http-proxy-middleware --save
 3、安装路由，命令：npm install react-router-dom --save
 4、安装typescript，可以编译 as类型数据脚本，命令：npm install  typescript --save
-
+5、安装three3D库，npm i three three-orbitcontrols --save
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
